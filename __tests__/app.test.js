@@ -16,5 +16,6 @@ test('First step', () => {
   const result = ['doc1', 'doc2'];
 
   const searchEngine = buildSearchEngine(docs);
-  expect(searchEngine.search(docs)).toBe(result);
+
+  expect(searchEngine.search('shoot')).toEqual(result);
 });
